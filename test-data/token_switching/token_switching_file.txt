@@ -1,0 +1,7 @@
+I am a ${TOKEN_1}
+
+I am also a ${TOKEN_1}
+
+I am a different ${KIND_OF_THING}
+
+${TBBC}

@@ -1,0 +1,4 @@
+- push to github
+- Sphinx documentation
+- test coverage
+- push to pypi.prg
