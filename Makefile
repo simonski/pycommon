@@ -30,8 +30,8 @@ test:
 	python setup.py test
 
 build: clean test
-	python setup.py test bdist
-	# python setup.py test bdist_wheel 
+	# python setup.py test bdist
+	python setup.py test bdist_wheel 
 
 upload: clean build
 	twine upload --repository-url https://upload.pypi.org/legacy/ dist/*
