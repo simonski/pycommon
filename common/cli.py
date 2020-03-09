@@ -155,7 +155,7 @@ class Application:
         if command is None:
             return self.on_usage()
 
-        fn_name = "on_" + command.lower()
+        fn_name = "on_" + command.lower().replace("-", "_")
 
         # todo if the command is `help`, find the on_function_help and return that
         # OR is all that just rubbish and we should hard code and not be clever.. I never know.
