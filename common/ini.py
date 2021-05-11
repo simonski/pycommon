@@ -4,6 +4,7 @@ import sys
 
 class IniFile(object):
     def __init__(self, filename=None):
+        self.filename = ""
         self.data = {}
         if filename is not None:
             self.filename = filename
@@ -12,6 +13,9 @@ class IniFile(object):
             self.root_dir = self.filename[0:len(filename)-len(basename)]
             if os.path.isfile(filename):
                 self.load()
+
+    def getFilename(self):
+        return self.filename
 
     def load(self):
         f = open(self.filename, 'r')

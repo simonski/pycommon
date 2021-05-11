@@ -110,7 +110,7 @@ def read_file(filename):
         return f.read()
 
 def is_os_macos() -> bool:
-    return platform.system.lower() == "darwin"
+    return platform.system().lower() == "darwin"
 
 def is_os_windows() -> bool:
     return platform.system().lower() == "windows"
